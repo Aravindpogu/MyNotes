@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.multimedia.notes"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainCreateNotesActivity"
+            android:label="@string/title_activity_main_create_notes"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mutimedia.notes.MainActivity" />
+        </activity>
+        <activity
+            android:name=".CreateTextNotesActivity"
+            android:label="@string/create_text_notes"
+            android:parentActivityName=".MainCreateNotesActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mutimedia.notes.MainCreateNotesActivity" />
+        </activity>
+        <activity
+            android:name=".CreateAudioNoteActivity"
+            android:label="@string/title_activity_create_audio_note"
+            android:parentActivityName=".MainCreateNotesActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mutimedia.notes.MainCreateNotesActivity" />
+        </activity>
+        <activity
+            android:name=".CreateVideoNotesActivity"
+            android:label="@string/title_activity_create_video_note"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        
+        <activity
+            android:name=".ShowTextNotesActivity"
+            android:label="@string/title_activity_show_text_notes"
+            android:parentActivityName=".MainSearchNotesActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mutimedia.notes.MainSearchNotesActivity" />
+        </activity>
+        <activity
+            android:name=".SplashScreen"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+"
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        
+        <activity
+            android:name=".ShowAudioNotesActivity"
+            android:label="@string/title_activity_show_audio_notes"
+            android:parentActivityName=".MainSearchNotesActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mutimedia.notes.MainSearchNotesActivity" />
+        </activity>
+        <activity
+            android:name=".MainSearchNotesActivity"
+            android:label="@string/title_activity_main_search_notes"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mutimedia.notes.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ShowVideoNotesActivity"
+            android:label="@string/title_activity_display_video_notes" 
+            android:parentActivityName=".MainSearchNotesActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mutimedia.notes.MainSearchNotesActivity" />
+        </activity>
+        <activity
+            android:name=".PlayVideoActivity"
+            android:label="@string/title_activity_playing_video" >
+        </activity>
+        <activity
+            android:name=".PlayAudioActivity"
+            android:label="@string/title_activity_play_audio"
+            android:parentActivityName=".ShowAudioNotesActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.multimedia.notes.ShowAudioNotesActivity" />
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+</manifest>

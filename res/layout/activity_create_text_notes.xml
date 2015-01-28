@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/note"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".CreateTextNotesActivity" >
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_size" />
+
+    <EditText
+        android:id="@+id/noteText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/text_to_be_saved_hint"
+    	android:lines="5"
+        android:minLines="1"
+        android:maxLines="10"
+        android:maxLength="2000"
+        android:scrollbars="none"
+        android:inputType="textMultiLine|textCapSentences"
+        android:layout_alignLeft="@+id/saveNote"
+        android:layout_below="@+id/welcomeText"
+        android:layout_marginTop="25dp"
+        android:ems="10" />
+
+     <Button
+        android:id="@+id/saveNote"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/welcomeText"
+        android:layout_below="@id/welcomeText"
+        android:layout_marginTop="150dp"
+        android:text="@string/Save" />
+</RelativeLayout>

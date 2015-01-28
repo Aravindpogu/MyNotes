@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/note"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/savedAudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:textSize="@dimen/font_size" />
+
+    <TextView
+        android:id="@+id/suggestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/savedAudio"
+        android:textSize="@dimen/font_size" />
+
+    <EditText
+        android:id="@+id/audioNoteName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/text_to_be_saved_hint"
+    	android:inputType="text" 
+        android:layout_alignLeft="@+id/saveNote"
+        android:layout_below="@+id/suggestion"
+        android:layout_marginTop="24dp"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/savedAudio"
+        android:layout_marginTop="100dp"
+        android:text="@string/start" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/start"
+        android:text="Stop" />
+
+</RelativeLayout>

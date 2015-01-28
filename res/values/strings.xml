@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NotesOnGo</string>
+    <string name="loading">Loading</string>
+    <string name="create_notes">Create Notes</string>
+    <string name="search_notes">Search Notes</string>
+    <string name="title_activity_main_create_notes">Create Notes</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_show_saved_notes">Show Saved Notes</string>
+    <string name="title_activity_show_text_notes">Search Text Notes</string>
+    <string name="title_activity_create_audio_note">Create Audio Note</string>
+    <string name="title_activity_create_video_note">Create Video Note</string>
+    <string name="title_activity_video_note">Video Note</string>
+    <string name="title_activity_main">Notes On Go</string>
+    <string name="text_to_be_saved_hint">Text to be saved</string>
+    <string name="Save">Save</string>
+    <string name="title_activity_check_notes">Search Notes</string>
+    <string name="title_activity_show_audio_notes">Show Audio Notes</string>
+    <string name="title_activity_main_search_notes">Search All Notes</string>
+    <string name="text">Text</string>
+    <string name="audio">Audio</string>
+    <string name="video">Video</string>
+    <string name="title_activity_display_video_notes">Display Video Notes</string>
+    <string name="title_activity_start">Start Activity</string>
+    <string name="title_activity_video_capture">Video Capture</string>
+    <string name="title_activity_playing_video">Playing Video</string>
+    <string name="video_player">Video Player</string>
+    <string name="stop">Stop</string>
+    <string name="start">start</string>
+    <string name="pause">Pause</string>
+    <string name="play">Play</string>
+    <string name="create_text_notes">Create Text Notes</string>
+    <string name="create_audio_notes">Create Audio Notes</string>
+    <string name="create_video_notes">Create Video Notes</string>
+    <string name="search">Search</string>
+    <string name="title_activity_play_audio">Playing Audio</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>
